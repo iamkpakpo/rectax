@@ -1,0 +1,64 @@
+/* ==========================================
+   RECTAX Real Estate Platform - Design Tokens
+   Matching design-system.md specs
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1A1A1A;          /* Ink Black */
+  --color-background: #E7E4D9;       /* Warm Sand */
+  --color-surface: #FFFFFF;          /* Surface White */
+  
+  /* Secondary / Accent Colors */
+  --color-accent: #F0932B;           /* Signal Orange */
+  --color-accent-hover: #D97F1C;     /* Orange Hover */
+  
+  /* Neutrals */
+  --color-text-primary: #1A1A1A;     /* Primary text */
+  --color-text-secondary: #5C5C58;   /* Body Copy Gray */
+  --color-text-muted: #8A8A85;       /* Secondary/Captions */
+  --color-border: #DDDAD0;           /* Border Gray */
+  
+  /* Semantics */
+  --color-success: #2E9E5B;
+  --color-warning: #E0A400;
+  --color-error: #D64545;
+  --color-info: #3B82C4;
+  
+  /* Typography */
+  --font-heading: 'Outfit', 'General Sans', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-float: 0 20px 48px rgba(26, 26, 26, 0.16);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease-out;
+  --transition-smooth: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Container Width */
+  --container-max-width: 1280px;
+}

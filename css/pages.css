@@ -1,0 +1,186 @@
+/* ==========================================
+   RECTAX Real Estate Platform - Page Layouts & Responsiveness
+   ========================================== */
+
+/* Responsive Layout Grids */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.two-col-asymmetric {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.auto-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+/* Responsive Image Container */
+.hero-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+/* Trust Stats Bar */
+.trust-stats-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+/* Utility Visibility Classes */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .show-mobile-only {
+    display: none !important;
+  }
+}
+
+/* ==========================================
+   RESPONSIVE BREAKPOINTS OVERRIDES
+   ========================================== */
+
+/* Tablet & Mobile (<= 991px) */
+@media (max-width: 991px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero-image {
+    height: 380px;
+  }
+
+  .two-col-grid,
+  .two-col-asymmetric {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .three-col-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .four-col-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobile-order-first {
+    order: -1 !important;
+  }
+}
+
+/* Mobile Devices (<= 767px) */
+@media (max-width: 767px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .three-col-grid,
+  .four-col-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-stats-row {
+    gap: var(--space-4);
+    justify-content: space-between;
+  }
+
+  .trust-stats-row > div {
+    flex: 1 1 40%;
+    min-width: 120px;
+  }
+
+  .auto-grid-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form & Input adjustments for touch targets */
+  .search-input,
+  .btn {
+    min-height: 48px;
+  }
+
+  /* Modal Padding Adjustment for Mobile */
+  .modal-content {
+    padding: var(--space-4) !important;
+    width: 95% !important;
+  }
+
+  /* Search bar stack */
+  .hero-search-bar .btn-icon-only {
+    width: 100% !important;
+    border-radius: var(--radius-pill) !important;
+    height: 48px !important;
+  }
+
+  .pill-tabs-track {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pill-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 12px;
+  }
+}
+
+/* Extra Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .display-title {
+    font-size: 2.125rem !important;
+  }
+
+  .navbar-title {
+    font-size: 1.15rem;
+  }
+
+  .navbar-logo {
+    height: 32px;
+  }
+
+  .btn {
+    padding: 0 var(--space-4);
+    font-size: 0.875rem;
+  }
+
+  .notch-cta-shape {
+    padding: var(--space-6) var(--space-4) !important;
+  }
+}

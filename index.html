@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RECTAX | Real Estate Brokerage, Property & Asset Management</title>
+  <meta name="description" content="RECTAX is a technology-driven real estate company delivering professional solutions in brokerage, property management, and asset management in Accra, Ghana.">
+  <meta name="keywords" content="Real Estate Ghana, Property Management Accra, Real Estate Brokerage, Asset Management, Buy Property Accra">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./css/design-tokens.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand" id="nav-brand-logo">
+        <img src="./brand assets/rectax logo.svg" alt="RECTAX Logo" class="navbar-logo">
+        <span class="navbar-title">RECTAX</span>
+      </a>
+
+      <ul class="navbar-links" id="nav-menu">
+        <li><a href="index.html" class="navbar-link active">Home</a></li>
+        <li><a href="about.html" class="navbar-link">About Us</a></li>
+        <li><a href="services.html" class="navbar-link">Services</a></li>
+        <li><a href="who-we-serve.html" class="navbar-link">Who We Serve</a></li>
+        <li><a href="resources.html" class="navbar-link">Resources</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <button type="button" class="btn btn-accent btn-book-consultation" id="nav-cta-btn">Book Consultation</button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="section section-sand" style="padding-top: var(--space-12); padding-bottom: var(--space-16);">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text & Search Column -->
+          <div>
+            <span class="badge badge-orange" style="margin-bottom: var(--space-4);">Technology-Driven Real Estate</span>
+            <h1 class="display-title" style="margin-bottom: var(--space-6);">
+              Connecting you <span class="light-text">to the</span> prime property <span class="light-text">you deserve.</span>
+            </h1>
+            <p style="font-size: 1.125rem; margin-bottom: var(--space-8); max-width: 540px;">
+              Full-service real estate expertise across brokerage, property management, and asset optimization. Empowering owners, buyers, and investors with total clarity.
+            </p>
+
+            <!-- Search Bar Component -->
+            <div class="hero-search-bar" style="margin-bottom: var(--space-6);">
+              <!-- Segmented Pill Tabs -->
+              <div class="pill-tabs-track">
+                <button type="button" class="pill-tab active" data-mode="buy">Buy</button>
+                <button type="button" class="pill-tab" data-mode="rent">Rent</button>
+                <button type="button" class="pill-tab" data-mode="sell">Sell</button>
+              </div>
+
+              <div class="search-field">
+                <label class="search-label" for="search-location">Location</label>
+                <input type="text" id="search-location" class="search-input" placeholder="e.g. Airport Residential, Accra" value="Accra Central">
+              </div>
+
+              <div class="search-divider"></div>
+
+              <div class="search-field">
+                <label class="search-label" for="search-property-type">Property Type</label>
+                <input type="text" id="search-property-type" class="search-input" placeholder="Commercial or Residential">
+              </div>
+
+              <button type="button" class="btn btn-accent btn-icon-only" id="hero-search-submit" aria-label="Search properties">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Trust Stats Row -->
+            <div class="trust-stats-row">
+              <div>
+                <span class="stat-number">GH₵ 150M+</span>
+                <span class="stat-label" style="display: block;">Assets Managed</span>
+              </div>
+              <div style="width: 1px; height: 32px; background-color: var(--color-border);" class="hide-mobile"></div>
+              <div>
+                <span class="stat-number">99.4%</span>
+                <span class="stat-label" style="display: block;">Tenant Satisfaction</span>
+              </div>
+              <div style="width: 1px; height: 32px; background-color: var(--color-border);" class="hide-mobile"></div>
+              <div>
+                <span class="stat-number">15+ Yrs</span>
+                <span class="stat-label" style="display: block;">Combined Mastery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image & Floating Card Column -->
+          <div style="position: relative;">
+            <div class="clipped-hero-container" style="box-shadow: var(--shadow-lg);">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Modern Architecture RECTAX Real Estate" class="hero-image">
+            </div>
+
+            <!-- Floating Property Card Overlay -->
+            <div class="floating-stat-card">
+              <div class="icon-badge" style="width: 40px; height: 40px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+              </div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 700; text-transform: uppercase;">Featured Portfolio</span>
+                <div style="font-weight: 700; font-size: 1.05rem; color: var(--color-primary);">Cantonments Executive Suites</div>
+                <div style="font-size: 0.8125rem; color: var(--color-accent); font-weight: 600;">Managed by RECTAX Asset Team</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Overview -->
+    <section class="section section-white" id="services-overview">
+      <div class="container">
+        <div style="text-align: center; max-width: 640px; margin: 0 auto var(--space-12);">
+          <span class="badge badge-orange" style="margin-bottom: var(--space-2);">Our Core Capabilities</span>
+          <h2>Professional Solutions Designed for Real Estate Success</h2>
+          <p style="margin-top: var(--space-3);">Whether buying your first property, managing a portfolio, or maximizing asset yield, RECTAX delivers unmatched standard of care.</p>
+        </div>
+
+        <div class="auto-grid-cards">
+          
+          <!-- Card 1: Brokerage -->
+          <div class="card card-padding-lg">
+            <div class="icon-badge" style="margin-bottom: var(--space-6);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-3);">Real Estate Brokerage</h3>
+            <p style="margin-bottom: var(--space-6);">
+              Navigating residential and commercial property sales, purchases, and leasing agreements with transparent valuations and expert market guidance.
+            </p>
+            <ul style="list-style: none; margin-bottom: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.9375rem; color: var(--color-text-secondary);">
+              <li>✓ Qualified Buyer & Seller Matching</li>
+              <li>✓ Market Valuation & Price Strategy</li>
+              <li>✓ Seamless Lease Negotiation</li>
+            </ul>
+            <a href="brokerage.html" class="btn btn-secondary" style="width: 100%;">Learn About Brokerage →</a>
+          </div>
+
+          <!-- Card 2: Property Management -->
+          <div class="card card-padding-lg">
+            <div class="icon-badge" style="margin-bottom: var(--space-6);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-3);">Property Management</h3>
+            <p style="margin-bottom: var(--space-6);">
+              Hassle-free landlord solutions including comprehensive tenant screening, automated rent collection, preventive maintenance, and detailed accounting.
+            </p>
+            <ul style="list-style: none; margin-bottom: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.9375rem; color: var(--color-text-secondary);">
+              <li>✓ Rigorous Tenant Vetting</li>
+              <li>✓ Timely Rent Collection</li>
+              <li>✓ 24/7 Facility Maintenance</li>
+            </ul>
+            <a href="property-management.html" class="btn btn-secondary" style="width: 100%;">Learn About Property Mgmt →</a>
+          </div>
+
+          <!-- Card 3: Asset Management -->
+          <div class="card card-padding-lg">
+            <div class="icon-badge" style="margin-bottom: var(--space-6);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-3);">Asset Management</h3>
+            <p style="margin-bottom: var(--space-6);">
+              Strategic advisory for institutional and private investors to optimize portfolio performance, mitigate risk, and maximize real estate capital returns.
+            </p>
+            <ul style="list-style: none; margin-bottom: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.9375rem; color: var(--color-text-secondary);">
+              <li>✓ Strategic Portfolio Allocation</li>
+              <li>✓ Risk Assessment & Mitigation</li>
+              <li>✓ Yield & Return Optimization</li>
+            </ul>
+            <a href="asset-management.html" class="btn btn-secondary" style="width: 100%;">Learn About Asset Mgmt →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose RECTAX Section -->
+    <section class="section section-sand">
+      <div class="container">
+        <div class="two-col-grid">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom: var(--space-3);">The RECTAX Difference</span>
+            <h2 style="margin-bottom: var(--space-4);">Built on Integrity, Driven by Modern Technology</h2>
+            <p style="margin-bottom: var(--space-6);">
+              We bridge traditional real estate expertise with digital transparency. RECTAX provides property owners and investors with complete peace of mind through audited operations and proactive communication.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <div style="display: flex; gap: var(--space-4);">
+                <div class="icon-badge" style="width: 36px; height: 36px; font-size: 0.875rem;">01</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 2px;">End-to-End Transparency</h4>
+                  <p style="font-size: 0.9375rem;">Clear reporting on rental yields, property condition assessments, and market valuations without hidden costs.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: var(--space-4);">
+                <div class="icon-badge" style="width: 36px; height: 36px; font-size: 0.875rem;">02</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 2px;">Tailored Client Strategies</h4>
+                  <p style="font-size: 0.9375rem;">Every investor and property owner gets customized management plans aligned with long-term financial targets.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: var(--space-4);">
+                <div class="icon-badge" style="width: 36px; height: 36px; font-size: 0.875rem;">03</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 2px;">Local Market Mastery in Ghana</h4>
+                  <p style="font-size: 0.9375rem;">Deep local insights across prime Accra districts including Airport Residential, Cantonments, Ridge, and East Legon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="background-color: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-8); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+              <h3 style="margin-bottom: var(--space-4);">Request a Property Evaluation</h3>
+              <p style="font-size: 0.9375rem; margin-bottom: var(--space-6);">Interested in learning what your property could yield in today's Accra market?</p>
+              
+              <form id="home-evaluation-form" onsubmit="event.preventDefault(); alert('Thank you! Your request has been received. Our team will contact you shortly.');">
+                <div style="margin-bottom: var(--space-4);">
+                  <label class="search-label" style="display: block; margin-bottom: 4px;">Full Name</label>
+                  <input type="text" class="search-input" style="width: 100%; border: 1px solid var(--color-border); padding: 12px 16px; border-radius: var(--radius-sm); background-color: var(--color-background);" placeholder="Enter your full name" required>
+                </div>
+
+                <div style="margin-bottom: var(--space-4);">
+                  <label class="search-label" style="display: block; margin-bottom: 4px;">Phone Number</label>
+                  <input type="tel" class="search-input" style="width: 100%; border: 1px solid var(--color-border); padding: 12px 16px; border-radius: var(--radius-sm); background-color: var(--color-background);" placeholder="0558582333" required>
+                </div>
+
+                <div style="margin-bottom: var(--space-6);">
+                  <label class="search-label" style="display: block; margin-bottom: 4px;">Property Location / Details</label>
+                  <input type="text" class="search-input" style="width: 100%; border: 1px solid var(--color-border); padding: 12px 16px; border-radius: var(--radius-sm); background-color: var(--color-background);" placeholder="e.g. 3-bedroom house in Airport Residential">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Property Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA Band Component -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="notch-cta-shape" style="text-align: center; max-width: 960px; margin: 0 auto;">
+          <span class="badge badge-orange" style="margin-bottom: var(--space-3);">Take The Next Step</span>
+          <h2 style="color: var(--color-surface); font-size: clamp(1.75rem, 3vw, 2.5rem); margin-bottom: var(--space-4);">
+            Ready to elevate your real estate portfolio?
+          </h2>
+          <p style="color: var(--color-border); max-width: 580px; margin: 0 auto var(--space-8); font-size: 1.05rem;">
+            Book a dedicated consultation session with our advisory team to discuss brokerage, management, or investment strategies.
+          </p>
+          <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-accent btn-book-consultation" style="padding: 0 var(--space-8);">
+              Book Consultation Now
+            </button>
+            <a href="contact.html" class="btn btn-secondary" style="background: transparent; color: var(--color-surface); border-color: rgba(255,255,255,0.4);">
+              Contact Office
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <img src="./brand assets/rectax logo.svg" alt="RECTAX Logo" class="navbar-logo">
+            <span class="navbar-title">RECTAX</span>
+          </a>
+          <p>
+            RECTAX is a technology-driven real estate company delivering professional brokerage, property management, and asset management solutions.
+          </p>
+          
+          <!-- Social Media Placeholders -->
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn Placeholder">in</a>
+            <a href="#" class="social-icon" aria-label="Instagram Placeholder">ig</a>
+            <a href="#" class="social-icon" aria-label="X / Twitter Placeholder">x</a>
+            <a href="#" class="social-icon" aria-label="Facebook Placeholder">fb</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-column-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About RECTAX</a></li>
+            <li><a href="who-we-serve.html" class="footer-link">Who We Serve</a></li>
+            <li><a href="resources.html" class="footer-link">Insights & Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="footer-column-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="brokerage.html" class="footer-link">Real Estate Brokerage</a></li>
+            <li><a href="property-management.html" class="footer-link">Property Management</a></li>
+            <li><a href="asset-management.html" class="footer-link">Asset Management</a></li>
+            <li><a href="#" class="btn-book-consultation footer-link">Book Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Contact Details -->
+        <div>
+          <h4 class="footer-column-title">Get In Touch</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-top: 2px;">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span><strong>Email:</strong> <a href="mailto:info@rectax.org">info@rectax.org</a></span>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-top: 2px;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span><strong>Phone:</strong> <a href="tel:0558582333">0558582333</a></span>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-top: 2px;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span><strong>Location:</strong> No. 28 Anum Tessa Ave. Accra, Ghana</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Copyright Bar -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 RECTAX. All rights reserved. Professional Real Estate Solutions.</div>
+        <div>Designed according to RECTAX Design System.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+  <script src="./js/calendly.js"></script>
+  <script src="./js/search-filter.js"></script>
+</body>
+</html>
